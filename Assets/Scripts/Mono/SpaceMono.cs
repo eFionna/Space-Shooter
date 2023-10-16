@@ -7,6 +7,7 @@ public class SpaceMono : MonoBehaviour
     public float2 Size;
     public int AsteroidsToSpawn;
     public GameObject[] AstroidPrefabs;
+    public uint Seed;
 }
 
 public class SpaceBaker : Baker<SpaceMono>
@@ -18,7 +19,7 @@ public class SpaceBaker : Baker<SpaceMono>
             Debug.LogWarning("AstroidPrefabs is bigger then 10. Will not Bake with bad data.");
             return;
         }
-        var entity = GetEntity(TransformUsageFlags.None);//Why???
+        var entity = GetEntity(TransformUsageFlags.Dynamic);//Why???
 
         var Buff = AddBuffer<AstroidBuffer>(entity);
 
@@ -32,5 +33,11 @@ public class SpaceBaker : Baker<SpaceMono>
             Size = authoring.Size,
             AsteroidsToSpawn = authoring.AsteroidsToSpawn,
         });
+        AddComponent(entity, new SpaceRandom
+        {
+            Random = Unity.Mathematics.Random.CreateFromIndex(authoring.Seed)
+        });
     }
 }
+
+
