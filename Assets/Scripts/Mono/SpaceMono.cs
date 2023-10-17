@@ -19,7 +19,7 @@ public class SpaceBaker : Baker<SpaceMono>
             Debug.LogWarning("AstroidPrefabs is bigger then 10. Will not Bake with bad data.");
             return;
         }
-        var entity = GetEntity(TransformUsageFlags.Dynamic);//Why???
+        var entity = GetEntity(TransformUsageFlags.Dynamic);
 
         var Buff = AddBuffer<AstroidBuffer>(entity);
 

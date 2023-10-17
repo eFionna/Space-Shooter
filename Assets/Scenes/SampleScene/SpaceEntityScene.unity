@@ -155,7 +155,7 @@ MonoBehaviour:
   Size:
     x: 10
     y: 10
-  AsteroidsToSpawn: 5
+  AsteroidsToSpawn: 20
   AstroidPrefabs:
   - {fileID: 2248419692589271166, guid: 1256eb16aeb63fd47abb57e43fbddb9c, type: 3}
   - {fileID: 2071908315872510321, guid: 4672101288fe7814db40c61f5d660e52, type: 3}
@@ -167,7 +167,7 @@ MonoBehaviour:
   - {fileID: 6891260788631976465, guid: fb89b8c1ab8fe334faed1006d7c40b31, type: 3}
   - {fileID: 3099659220322120563, guid: 09baaa9cb7878ab40b7274326e9b598a, type: 3}
   - {fileID: 2585435610000939713, guid: addbd0e96d3f46c48b0ff79e502f6b36, type: 3}
-  Seed: 0
+  Seed: 5
 --- !u!4 &1549291782
 Transform:
   m_ObjectHideFlags: 0

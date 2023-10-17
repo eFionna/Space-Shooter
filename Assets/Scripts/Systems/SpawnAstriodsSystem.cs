@@ -2,9 +2,9 @@ using Unity.Burst;
 using Unity.Entities;
 using Unity.Collections;
 using Unity.Transforms;
-using Unity.Mathematics;
 
 [BurstCompile]
+[UpdateInGroup(typeof(InitializationSystemGroup))]
 public partial struct SpawnAstriodsSystem : ISystem
 {
     [BurstCompile]

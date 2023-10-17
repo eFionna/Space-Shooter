@@ -93,6 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 33675738020904964}
+  - component: {fileID: -1740992794732890846}
   m_Layer: 0
   m_Name: Asteroid_8
   m_TagString: Untagged
@@ -116,3 +117,16 @@ Transform:
   - {fileID: 5824534494557213821}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1740992794732890846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891260788631976465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4de9eb351404a4abeb5704c2bdc4fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 0.1
