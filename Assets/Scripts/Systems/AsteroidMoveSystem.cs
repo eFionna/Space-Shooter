@@ -39,3 +39,10 @@ public partial struct AsteroidMovekJob : IJobEntity
         asteroid.Move(DeltaTime);
     }
 }
+public partial struct AsteroidDieJob: IJobEntity
+{
+    private void Execute(AsteroidAspect asteroidAspect)
+    {
+
+    }
+}

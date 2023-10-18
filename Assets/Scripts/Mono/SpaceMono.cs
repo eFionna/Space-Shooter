@@ -8,6 +8,8 @@ public class SpaceMono : MonoBehaviour
     public int AsteroidsToSpawn;
     public GameObject[] AstroidPrefabs;
     public uint Seed;
+
+           
 }
 
 public class SpaceBaker : Baker<SpaceMono>
